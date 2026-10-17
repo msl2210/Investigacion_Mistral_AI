@@ -1,0 +1,12 @@
+[
+  {
+    "id": "DEV-01",
+    "categoria": "generacion_texto",
+    "prompt": "Explica en una frase qué es la inteligencia artificial."
+  },
+  {
+    "id": "DEV-02",
+    "categoria": "codigo",
+    "prompt": "Escribe una función Python que sume dos números."
+  }
+]
