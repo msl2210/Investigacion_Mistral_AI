@@ -8,7 +8,14 @@ import requests
 
 
 def generar_respuesta(modelo, prompt, temperatura, max_tokens):
-    url = "http://localhost:11434/api/generate"
+    # Permite definir la dirección de Ollama mediante una variable de entorno.
+    # En ejecución local utiliza localhost por defecto.
+    ollama_url = os.getenv(
+        "OLLAMA_URL",
+        "http://localhost:11434"
+    )
+
+    url = f"{ollama_url}/api/generate"
 
     payload = {
         "model": modelo,
@@ -94,16 +101,34 @@ def mostrar_resultado(resultado):
     print("\n--- Métricas ---")
     print(f"TTFT: {resultado['ttft']:.2f} s")
     print(f"Tokens generados: {resultado['tokens_generados']}")
-    print(f"Tiempo de generación: {resultado['tiempo_generacion']:.2f} s")
+    print(
+        f"Tiempo de generación: "
+        f"{resultado['tiempo_generacion']:.2f} s"
+    )
     print(f"Tiempo total: {resultado['tiempo_total']:.2f} s")
-    print(f"Tokens por segundo: {resultado['tokens_por_segundo']:.2f}")
+    print(
+        f"Tokens por segundo: "
+        f"{resultado['tokens_por_segundo']:.2f}"
+    )
 
 
 def guardar_resultados(resultados, modelo, temperatura, max_tokens):
-    os.makedirs("results", exist_ok=True)
+    directorio_resultados = os.getenv(
+        "RESULTS_DIR",
+        "results"
+    )
+
+    os.makedirs(
+        directorio_resultados,
+        exist_ok=True
+    )
 
     fecha = datetime.now().strftime("%Y%m%d_%H%M%S")
-    nombre_archivo = f"results/resultados_{fecha}.json"
+
+    nombre_archivo = os.path.join(
+        directorio_resultados,
+        f"resultados_{fecha}.json"
+    )
 
     contenido = {
         "modelo": modelo,
@@ -113,7 +138,11 @@ def guardar_resultados(resultados, modelo, temperatura, max_tokens):
         "resultados": resultados
     }
 
-    with open(nombre_archivo, "w", encoding="utf-8") as archivo:
+    with open(
+        nombre_archivo,
+        "w",
+        encoding="utf-8"
+    ) as archivo:
         json.dump(
             contenido,
             archivo,
@@ -135,7 +164,9 @@ def main():
         help="Modelo de Ollama a utilizar"
     )
 
-    grupo_prompts = parser.add_mutually_exclusive_group(required=True)
+    grupo_prompts = parser.add_mutually_exclusive_group(
+        required=True
+    )
 
     grupo_prompts.add_argument(
         "--prompt",
@@ -182,7 +213,11 @@ def main():
             resultados.append(resultado)
 
         elif args.prompts_file:
-            with open(args.prompts_file, "r", encoding="utf-8") as archivo:
+            with open(
+                args.prompts_file,
+                "r",
+                encoding="utf-8"
+            ) as archivo:
                 prompts = json.load(archivo)
 
             if not isinstance(prompts, list):
@@ -203,7 +238,8 @@ def main():
                 print("\n" + "=" * 70)
                 print(
                     f"Ejecutando: {item.get('id', 'sin_id')} "
-                    f"| Categoría: {item.get('categoria', 'sin_categoria')}"
+                    f"| Categoría: "
+                    f"{item.get('categoria', 'sin_categoria')}"
                 )
                 print("=" * 70)
 
@@ -214,7 +250,11 @@ def main():
                     args.max_tokens
                 )
 
-                resultado["id"] = item.get("id", "sin_id")
+                resultado["id"] = item.get(
+                    "id",
+                    "sin_id"
+                )
+
                 resultado["categoria"] = item.get(
                     "categoria",
                     "sin_categoria"
@@ -232,11 +272,16 @@ def main():
         )
 
         print("\n" + "=" * 70)
-        print(f"Resultados guardados en: {archivo_resultados}")
+        print(
+            f"Resultados guardados en: "
+            f"{archivo_resultados}"
+        )
         print("=" * 70)
 
     except FileNotFoundError:
-        print("Error: no se encontró el archivo de prompts.")
+        print(
+            "Error: no se encontró el archivo de prompts."
+        )
 
     except json.JSONDecodeError:
         print(
@@ -247,13 +292,14 @@ def main():
     except requests.exceptions.ConnectionError:
         print(
             "Error: no se pudo conectar con Ollama. "
-            "Verifique que el servicio esté iniciado."
+            "Verifique que el servicio esté iniciado "
+            "y que OLLAMA_URL sea correcto."
         )
 
     except requests.exceptions.Timeout:
         print(
-            "Error: la solicitud a Ollama excedió el "
-            "tiempo máximo de espera."
+            "Error: la solicitud a Ollama excedió "
+            "el tiempo máximo de espera."
         )
 
     except requests.exceptions.HTTPError as error:
@@ -272,11 +318,21 @@ def main():
         else:
             print(f"Error HTTP: {error}")
 
+    except PermissionError:
+        print(
+            "Error: no se tienen permisos para escribir "
+            "en el directorio de resultados."
+        )
+
     except KeyboardInterrupt:
-        print("\nEjecución cancelada por el usuario.")
+        print(
+            "\nEjecución cancelada por el usuario."
+        )
 
     except Exception as error:
-        print(f"Error inesperado: {error}")
+        print(
+            f"Error inesperado: {error}"
+        )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+{
+    "modelo": "ministral-3:8b",
+    "temperatura": 0.2,
+    "max_tokens": 10,
+    "fecha_ejecucion": "2026-10-17T16:47:52.737858",
+    "resultados": [
+        {
+            "prompt": "Responde únicamente con la palabra OK",
+            "respuesta": "OK",
+            "ttft": 20.182570500008296,
+            "tokens_generados": 2,
+            "tiempo_generacion": 0.18854,
+            "tiempo_total": 20.3476859,
+            "tokens_por_segundo": 10.607828577490187,
+            "id": "prompt_individual",
+            "categoria": "sin_categoria"
+        }
+    ]
+}

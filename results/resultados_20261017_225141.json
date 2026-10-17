@@ -1,0 +1,30 @@
+{
+    "modelo": "ministral-3:8b",
+    "temperatura": 0.2,
+    "max_tokens": 100,
+    "fecha_ejecucion": "2026-10-17T22:51:41.432984",
+    "resultados": [
+        {
+            "prompt": "Explica en una frase qué es la inteligencia artificial.",
+            "respuesta": "La **inteligencia artificial (IA)** es la capacidad de las máquinas para imitar procesos cognitivos humanos, como el aprendizaje, el razonamiento, la toma de decisiones o la comprensión del lenguaje, mediante algoritmos y datos.",
+            "ttft": 0.7319483620000256,
+            "tokens_generados": 50,
+            "tiempo_generacion": 7.397519,
+            "tiempo_total": 8.1196889,
+            "tokens_por_segundo": 6.75902285617651,
+            "id": "DEV-01",
+            "categoria": "generacion_texto"
+        },
+        {
+            "prompt": "Escribe una función Python que sume dos números.",
+            "respuesta": "Aquí tienes una función simple en Python que suma dos números:\n\n```python\ndef sumar(a, b):\n    \"\"\"Suma dos números y devuelve el resultado.\n\n    Args:\n        a (int o float): Primer número a sumar.\n        b (int o float): Segundo número a sumar.\n\n    Returns:\n        int o float: Resultado de la suma.\n    \"\"\"\n    return a + b\n\n# Ejemplo de uso:\nresultado = sumar(5, 3",
+            "ttft": 0.717795883000008,
+            "tokens_generados": 100,
+            "tiempo_generacion": 15.746913,
+            "tiempo_total": 16.4561181,
+            "tokens_por_segundo": 6.350451037609721,
+            "id": "DEV-02",
+            "categoria": "codigo"
+        }
+    ]
+}
