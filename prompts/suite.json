@@ -1,0 +1,64 @@
+[
+  {
+    "id": "gen_01",
+    "categoria": "generacion_texto",
+    "prompt": "Redacta un correo formal dirigido a la coordinadora de carrera. Incluye estas tres ideas: (1) solicito una prorroga de tres dias para entregar un proyecto, (2) tuve un problema de salud que me impidio avanzar, (3) me comprometo a entregar el avance parcial manana. Usa un tono respetuoso y una extension maxima de 150 palabras.",
+    "criterio": "Tono formal, incluye saludo, las 3 ideas, despedida y no supera 150 palabras."
+  },
+  {
+    "id": "gen_02",
+    "categoria": "generacion_texto",
+    "prompt": "Escribe un parrafo introductorio de unas 100 palabras sobre la importancia de la ciberseguridad para estudiantes universitarios. No uses listas.",
+    "criterio": "Coherente, cerca de 100 palabras, un solo parrafo, sin listas ni datos inventados."
+  },
+  {
+    "id": "res_01",
+    "categoria": "resumen",
+    "prompt": "Resume el siguiente texto en exactamente 3 vinetas:\n\nEl teletrabajo se expandio de forma acelerada a partir de 2020, cuando miles de empresas enviaron a su personal a trabajar desde casa para reducir los contagios durante la pandemia. Muchas organizaciones pensaban que seria una medida temporal, pero con el paso de los anos se convirtio en una practica comun en sectores como la tecnologia, los servicios financieros y la atencion al cliente. Entre sus principales ventajas se mencionan el ahorro en tiempo y dinero de traslado, la flexibilidad de horarios y la posibilidad de que las empresas contraten personal que vive en otras ciudades o incluso en otros paises. Ademas, varios estudios han reportado que algunas personas aumentan su productividad cuando pueden concentrarse en un entorno tranquilo y organizar su jornada a su manera.\n\nSin embargo, el teletrabajo tambien presenta retos importantes. Algunas personas sienten aislamiento y extranan la interaccion cotidiana con sus companeros. Otras tienen dificultades para separar la vida laboral de la personal, lo que puede provocar jornadas mas largas y mayor cansancio. La comunicacion entre equipos puede volverse lenta si no existen buenas herramientas o acuerdos claros sobre horarios y canales. Ademas, el trabajo remoto requiere una conexion estable a internet y un espacio adecuado en el hogar, condiciones que no todas las personas tienen. Tampoco todos los empleos pueden hacerse a distancia, por lo que se generan diferencias entre quienes pueden elegir esta modalidad y quienes deben acudir siempre al lugar de trabajo.\n\nPor otro lado, a las empresas les preocupa mantener la cultura organizacional, supervisar el desempeno de forma justa y proteger la informacion sensible cuando se accede desde redes domesticas. Por todo esto, muchas organizaciones han empezado a adoptar modelos hibridos, en los que el personal combina dias presenciales y dias remotos, con el objetivo de aprovechar lo mejor de ambos esquemas y reducir sus desventajas.",
+    "criterio": "Exactamente 3 vinetas que cubran: expansion y ventajas, retos, modelo hibrido. Sin informacion que no este en el texto."
+  },
+  {
+    "id": "res_02",
+    "categoria": "resumen",
+    "prompt": "Resume el siguiente texto en exactamente 3 vinetas:\n\nLa computacion en la nube permite acceder a servidores, almacenamiento, bases de datos y aplicaciones a traves de internet, sin necesidad de comprar y mantener equipos propios. En lugar de instalar un centro de datos dentro de la empresa, las organizaciones alquilan recursos a proveedores como Amazon Web Services, Google Cloud o Microsoft Azure y pagan solo por lo que utilizan. Este modelo ha sido clave para el crecimiento de las aplicaciones moviles, el comercio electronico y, mas recientemente, los servicios de inteligencia artificial, que requieren mucha capacidad de calculo.\n\nEntre las ventajas mas citadas esta la reduccion de la inversion inicial, ya que no hace falta adquirir hardware costoso. Tambien destaca la escalabilidad: si una pagina web recibe de pronto miles de visitas adicionales, se pueden asignar mas recursos en minutos y liberarlos cuando la demanda baja. Ademas, los proveedores se encargan del mantenimiento fisico, las actualizaciones y las copias de seguridad, lo que libera tiempo del equipo tecnico.\n\nNo obstante, depender de un proveedor externo implica riesgos. Si el servicio sufre una caida, el cliente tiene pocas alternativas inmediatas. Si el proveedor sube sus precios o cambia sus condiciones, migrar a otra plataforma puede ser lento y costoso. A esto se suman las preocupaciones sobre privacidad, ya que los datos se almacenan en infraestructura de terceros, a veces ubicada en otros paises con leyes distintas. Tambien existe el riesgo de que los costos crezcan sin control si no se vigilan los recursos contratados.\n\nPor estas razones, muchas organizaciones evaluan alternativas como alojar parte de sus sistemas en servidores propios o combinar ambos enfoques en lo que se conoce como nube hibrida. La decision depende del tipo de datos, del presupuesto, de las exigencias legales y de la capacidad tecnica de cada equipo.",
+    "criterio": "Exactamente 3 vinetas: definicion y ventajas, riesgos de dependencia y privacidad, alternativas o enfoque hibrido. Sin invenciones."
+  },
+  {
+    "id": "cor_01",
+    "categoria": "correccion_traduccion",
+    "prompt": "Corrige la ortografia y la puntuacion del siguiente texto y devuelve solo el texto corregido: 'Ayer fuimos a la playa y aviamos olvidado las llaves del carro, por eso tubimos que esperar asta que llegara mi hermano con la copia'.",
+    "criterio": "Debe corregir: habiamos, tuvimos, hasta, y la puntuacion. Sin cambiar el significado."
+  },
+  {
+    "id": "cor_02",
+    "categoria": "correccion_traduccion",
+    "prompt": "Traduce al ingles: 'Necesito que me envien el informe antes del viernes porque la reunion con el cliente es el lunes por la manana.'",
+    "criterio": "Traduccion fiel y natural. Debe mantener: informe, antes del viernes, reunion con el cliente, lunes por la manana."
+  },
+  {
+    "id": "cod_01",
+    "categoria": "codigo",
+    "prompt": "Dada la tabla empleados(id, nombre, departamento, salario), escribe una consulta SQL que devuelva el salario promedio por departamento, solo para los departamentos con mas de 3 empleados, ordenado de mayor a menor promedio.",
+    "criterio": "Debe usar GROUP BY departamento, AVG(salario), HAVING COUNT(*) > 3 y ORDER BY promedio DESC. Verificar ejecutandola en SQLite o similar."
+  },
+  {
+    "id": "cod_02",
+    "categoria": "codigo",
+    "prompt": "Escribe una funcion en Python llamada filtrar_primos que reciba una lista de enteros y devuelva una nueva lista solo con los numeros primos. No uses librerias externas.",
+    "criterio": "Verificar ejecutandola con casos como [0, 1, 2, 3, 4, 5, 9, 11, 15, 17]; esperado [2, 3, 5, 11, 17]. Debe manejar 0 y 1 correctamente."
+  },
+  {
+    "id": "raz_01",
+    "categoria": "razonamiento_veracidad",
+    "prompt": "Ana es mayor que Beto. Beto es mayor que Carla. Carla es mayor que Diego. Quien es la segunda persona mas joven? Explica brevemente tu razonamiento.",
+    "respuesta_esperada": "Carla",
+    "criterio": "Respuesta correcta: Carla (Diego es la mas joven)."
+  },
+  {
+    "id": "raz_02",
+    "categoria": "razonamiento_veracidad",
+    "prompt": "Cual es la capital de Australia y cual es su ciudad mas poblada?",
+    "respuesta_esperada": "Capital: Canberra. Ciudad mas poblada: Sydney.",
+    "criterio": "Correcta si identifica Canberra y Sydney. Si responde Sydney como capital, es incorrecta."
+  }
+]
