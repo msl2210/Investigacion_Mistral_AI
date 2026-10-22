@@ -1,0 +1,118 @@
+{
+    "modelo": "ministral-3:8b",
+    "temperatura": 0.2,
+    "max_tokens": 500,
+    "fecha_ejecucion": "2026-10-22T01:26:25.356163",
+    "resultados": [
+        {
+            "prompt": "Redacta un correo formal dirigido a la coordinadora de carrera. Incluye estas tres ideas: (1) solicito una prorroga de tres dias para entregar un proyecto, (2) tuve un problema de salud que me impidio avanzar, (3) me comprometo a entregar el avance parcial manana. Usa un tono respetuoso y una extension maxima de 150 palabras.",
+            "respuesta": "**Asunto:** Solicitud de prorroga por motivo de salud\n\n**Estimada [Nombre de la coordinadora]:**\n\nEspero que se encuentre bien. Me dirijo a usted para solicitar, con todo respeto, una **prorroga de tres días** para la entrega del proyecto [nombre del proyecto o código], debido a un **problema de salud** que ha afectado mi capacidad para avanzar en los plazos establecidos.\n\nLamento las molestias ocasionadas y agradezco de antemano su comprensión. Me comprometo a entregarle el **avance parcial mañana [fecha]** y, por supuesto, a cumplir con el trabajo completo en la nueva fecha acordada.\n\nQuedo atenta a sus indicaciones y, si requiere algún documento adicional para respaldar mi solicitud, estaré encantada de proporcionarlo.\n\nAgradezco su tiempo y consideración.\n\n**Atentamente,**\n[Tu nombre completo]\n[Tu número de matrícula o identificación, si aplica]\n[Carrera y semestre]\n[Correo electrónico]",
+            "ttft": 2.820768275999967,
+            "tokens_generados": 227,
+            "tiempo_generacion": 30.355257,
+            "tiempo_total": 33.1677719,
+            "tokens_por_segundo": 7.478111616712716,
+            "id": "gen_01",
+            "categoria": "generacion_texto"
+        },
+        {
+            "prompt": "Escribe un parrafo introductorio de unas 100 palabras sobre la importancia de la ciberseguridad para estudiantes universitarios. No uses listas.",
+            "respuesta": "En la era digital actual, la ciberseguridad se ha convertido en un pilar fundamental, especialmente para los estudiantes universitarios, quienes interactúan diariamente con herramientas tecnológicas que manejan información sensible, desde datos personales hasta proyectos académicos y financieros. La exposición constante a redes, plataformas de aprendizaje en línea y comunicaciones digitales aumenta el riesgo de sufrir amenazas como phishing, robos de identidad o filtraciones de información confidencial. Para los jóvenes, que suelen ser el blanco preferente de ciberdelincuentes por su menor experiencia en seguridad digital, entender y aplicar prácticas básicas de protección no solo preserva su privacidad, sino que también fortalece su capacidad para enfrentar desafíos profesionales futuros. Adoptar hábitos como el uso de contraseñas robustas, la verificación de fuentes en internet y la actualización constante de software se vuelve esencial para navegar con confianza en un mundo donde la tecnología y la seguridad están intrínsecamente entrelazadas.",
+            "ttft": 1.3443085190000374,
+            "tokens_generados": 209,
+            "tiempo_generacion": 29.135842,
+            "tiempo_total": 30.4719804,
+            "tokens_por_segundo": 7.173295352164526,
+            "id": "gen_02",
+            "categoria": "generacion_texto"
+        },
+        {
+            "prompt": "Resume el siguiente texto en exactamente 3 vinetas:\n\nEl teletrabajo se expandio de forma acelerada a partir de 2020, cuando miles de empresas enviaron a su personal a trabajar desde casa para reducir los contagios durante la pandemia. Muchas organizaciones pensaban que seria una medida temporal, pero con el paso de los anos se convirtio en una practica comun en sectores como la tecnologia, los servicios financieros y la atencion al cliente. Entre sus principales ventajas se mencionan el ahorro en tiempo y dinero de traslado, la flexibilidad de horarios y la posibilidad de que las empresas contraten personal que vive en otras ciudades o incluso en otros paises. Ademas, varios estudios han reportado que algunas personas aumentan su productividad cuando pueden concentrarse en un entorno tranquilo y organizar su jornada a su manera.\n\nSin embargo, el teletrabajo tambien presenta retos importantes. Algunas personas sienten aislamiento y extranan la interaccion cotidiana con sus companeros. Otras tienen dificultades para separar la vida laboral de la personal, lo que puede provocar jornadas mas largas y mayor cansancio. La comunicacion entre equipos puede volverse lenta si no existen buenas herramientas o acuerdos claros sobre horarios y canales. Ademas, el trabajo remoto requiere una conexion estable a internet y un espacio adecuado en el hogar, condiciones que no todas las personas tienen. Tampoco todos los empleos pueden hacerse a distancia, por lo que se generan diferencias entre quienes pueden elegir esta modalidad y quienes deben acudir siempre al lugar de trabajo.\n\nPor otro lado, a las empresas les preocupa mantener la cultura organizacional, supervisar el desempeno de forma justa y proteger la informacion sensible cuando se accede desde redes domesticas. Por todo esto, muchas organizaciones han empezado a adoptar modelos hibridos, en los que el personal combina dias presenciales y dias remotos, con el objetivo de aprovechar lo mejor de ambos esquemas y reducir sus desventajas.",
+            "respuesta": "1. **Expansión y beneficios del teletrabajo**\n   El teletrabajo se consolidó desde 2020 como práctica habitual en sectores como tecnología, finanzas y atención al cliente, tras surgir como medida pandémica. Sus ventajas incluyen ahorro en tiempo y costos de transporte, flexibilidad horaria y acceso a talento global. Estudios destacan mayor productividad al permitir entornos de concentración personalizados.\n\n2. **Desafíos del trabajo remoto**\n   Entre sus retos destacan el aislamiento, la dificultad para separar vida laboral y personal (prolongando jornadas), y la dependencia de herramientas digitales y conexiones estables. No todos los empleos son compatibles, generando desigualdades, y la seguridad de datos y la cultura organizacional se ven afectadas.\n\n3. **Modelos híbridos como solución**\n   Ante los inconvenientes, muchas empresas adoptan esquemas híbridos (presencial + remoto) para equilibrar flexibilidad y colaboración, mitigando el aislamiento y optimizando recursos sin sacrificar productividad o cohesión laboral.",
+            "ttft": 12.848888022999972,
+            "tokens_generados": 235,
+            "tiempo_generacion": 32.917657,
+            "tiempo_total": 45.758713,
+            "tokens_por_segundo": 7.139025721059066,
+            "id": "res_01",
+            "categoria": "resumen"
+        },
+        {
+            "prompt": "Resume el siguiente texto en exactamente 3 vinetas:\n\nLa computacion en la nube permite acceder a servidores, almacenamiento, bases de datos y aplicaciones a traves de internet, sin necesidad de comprar y mantener equipos propios. En lugar de instalar un centro de datos dentro de la empresa, las organizaciones alquilan recursos a proveedores como Amazon Web Services, Google Cloud o Microsoft Azure y pagan solo por lo que utilizan. Este modelo ha sido clave para el crecimiento de las aplicaciones moviles, el comercio electronico y, mas recientemente, los servicios de inteligencia artificial, que requieren mucha capacidad de calculo.\n\nEntre las ventajas mas citadas esta la reduccion de la inversion inicial, ya que no hace falta adquirir hardware costoso. Tambien destaca la escalabilidad: si una pagina web recibe de pronto miles de visitas adicionales, se pueden asignar mas recursos en minutos y liberarlos cuando la demanda baja. Ademas, los proveedores se encargan del mantenimiento fisico, las actualizaciones y las copias de seguridad, lo que libera tiempo del equipo tecnico.\n\nNo obstante, depender de un proveedor externo implica riesgos. Si el servicio sufre una caida, el cliente tiene pocas alternativas inmediatas. Si el proveedor sube sus precios o cambia sus condiciones, migrar a otra plataforma puede ser lento y costoso. A esto se suman las preocupaciones sobre privacidad, ya que los datos se almacenan en infraestructura de terceros, a veces ubicada en otros paises con leyes distintas. Tambien existe el riesgo de que los costos crezcan sin control si no se vigilan los recursos contratados.\n\nPor estas razones, muchas organizaciones evaluan alternativas como alojar parte de sus sistemas en servidores propios o combinar ambos enfoques en lo que se conoce como nube hibrida. La decision depende del tipo de datos, del presupuesto, de las exigencias legales y de la capacidad tecnica de cada equipo.",
+            "respuesta": "1. **Modelo en la nube y sus ventajas**\n   La computación en la nube permite acceder a recursos tecnológicos (servidores, almacenamiento, IA) mediante internet, evitando la compra de infraestructura propia. Proveedores como AWS, Google Cloud o Azure ofrecen pagos por uso, impulsando el crecimiento de apps móviles, e-commerce y servicios de IA. Ventajas clave: reducción de costos iniciales, escalabilidad rápida y mantenimiento automatizado por parte de los proveedores.\n\n2. **Desafíos y riesgos**\n   Dependencia de terceros genera vulnerabilidades: caídas del servicio, cambios bruscos en precios o condiciones, y migraciones costosas. Además, preocupaciones por privacidad (almacenamiento en países con leyes distintas) y riesgos de sobrecostos si no se monitorea el consumo de recursos.\n\n3. **Alternativas y decisiones estratégicas**\n   Ante estos riesgos, muchas empresas optan por soluciones híbridas (nube + servidores propios) o priorizan la infraestructura local según el tipo de datos, regulaciones legales y capacidad técnica. La elección final depende de factores como presupuesto y exigencias operativas.",
+            "ttft": 0.22474882699998489,
+            "tokens_generados": 253,
+            "tiempo_generacion": 35.893032,
+            "tiempo_total": 36.1103572,
+            "tokens_por_segundo": 7.048721880057388,
+            "id": "res_02",
+            "categoria": "resumen"
+        },
+        {
+            "prompt": "Corrige la ortografia y la puntuacion del siguiente texto y devuelve solo el texto corregido: 'Ayer fuimos a la playa y aviamos olvidado las llaves del carro, por eso tubimos que esperar asta que llegara mi hermano con la copia'.",
+            "respuesta": "Ayer fuimos a la playa y **habíamos** olvidado las llaves del coche, por eso **tuvimos** que esperar hasta que llegara mi hermano con la copia.",
+            "ttft": 2.3067689999999175,
+            "tokens_generados": 40,
+            "tiempo_generacion": 5.221963,
+            "tiempo_total": 7.5211659,
+            "tokens_por_segundo": 7.659954695197956,
+            "id": "cor_01",
+            "categoria": "correccion_traduccion"
+        },
+        {
+            "prompt": "Traduce al ingles: 'Necesito que me envien el informe antes del viernes porque la reunion con el cliente es el lunes por la manana.'",
+            "respuesta": "**\"I need you to send me the report before Friday because the client meeting is on Monday morning.\"**",
+            "ttft": 1.4743549120000807,
+            "tokens_generados": 22,
+            "tiempo_generacion": 2.749042,
+            "tiempo_total": 4.215483,
+            "tokens_por_segundo": 8.002787880287023,
+            "id": "cor_02",
+            "categoria": "correccion_traduccion"
+        },
+        {
+            "prompt": "Dada la tabla empleados(id, nombre, departamento, salario), escribe una consulta SQL que devuelva el salario promedio por departamento, solo para los departamentos con mas de 3 empleados, ordenado de mayor a menor promedio.",
+            "respuesta": "Aquí tienes la consulta SQL que calcula el salario promedio por departamento, pero solo para aquellos con más de 3 empleados, ordenados de mayor a menor promedio:\n\n```sql\nSELECT\n    departamento,\n    AVG(salario) AS salario_promedio\nFROM\n    empleados\nGROUP BY\n    departamento\nHAVING\n    COUNT(id) > 3\nORDER BY\n    salario_promedio DESC;\n```\n\nExplicación:\n1. `GROUP BY departamento` agrupa los registros por cada departamento\n2. `AVG(salario)` calcula el promedio de salarios en cada grupo\n3. `HAVING COUNT(id) > 3` filtra solo los departamentos con más de 3 empleados\n4. `ORDER BY salario_promedio DESC` ordena los resultados de mayor a menor promedio",
+            "ttft": 1.9351745039999741,
+            "tokens_generados": 178,
+            "tiempo_generacion": 23.966814,
+            "tiempo_total": 25.8946297,
+            "tokens_por_segundo": 7.426936262784031,
+            "id": "cod_01",
+            "categoria": "codigo"
+        },
+        {
+            "prompt": "Escribe una funcion en Python llamada filtrar_primos que reciba una lista de enteros y devuelva una nueva lista solo con los numeros primos. No uses librerias externas.",
+            "respuesta": "Aquí tienes una función en Python llamada `filtrar_primos` que recibe una lista de enteros y devuelve una nueva lista con solo los números primos, sin usar librerías externas:\n\n```python\ndef filtrar_primos(lista):\n    def es_ primo(num):\n        if num <= 1:\n            return False\n        if num == 2:\n            return True\n        if num % 2 == 0:\n            return False\n        for i in range(3, int(num ** 0.5) + 1, 2):\n            if num % i == 0:\n                return False\n        return True\n\n    primos = [num for num in lista if es_ primo(num)]\n    return primos\n```\n\n### Explicación:\n1. **Función interna `es_primo`**:\n   - Verifica si un número es primo.\n   - Los números menores o iguales a 1 no son primos.\n   - El 2 es el único número primo par.\n   - Para los demás números, se comprueba si son divisibles por algún número desde 3 hasta la raíz cuadrada del número (saltando los pares).\n\n2. **List comprehension**:\n   - Filtra la lista original, incluyendo solo los números que cumplen con `es_primo(num)`.\n\n### Ejemplo de uso:\n```python\nnumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]\nprint(filtrar_primos(numeros))  # Salida: [2, 3, 5, 7, 11, 13]\n```\n\nSi necesitas optimizarla más o manejar casos especiales, puedo ajustarla.",
+            "ttft": 1.8208533360000274,
+            "tokens_generados": 389,
+            "tiempo_generacion": 52.892913,
+            "tiempo_total": 54.6934454,
+            "tokens_por_segundo": 7.354482442666752,
+            "id": "cod_02",
+            "categoria": "codigo"
+        },
+        {
+            "prompt": "Ana es mayor que Beto. Beto es mayor que Carla. Carla es mayor que Diego. Quien es la segunda persona mas joven? Explica brevemente tu razonamiento.",
+            "respuesta": "Para determinar quién es la segunda persona más joven, ordenamos las edades de mayor a menor según la información dada:\n\n1. **Ana** > **Beto** > **Carla** > **Diego**\n\nEsto significa que **Diego** es el más joven y **Ana** es la más mayor.\n\nLa **segunda persona más joven** es **Carla**, ya que viene justo después de Diego en el orden de edad.\n\n**Respuesta:** Carla es la segunda persona más joven.",
+            "ttft": 1.5592120850000128,
+            "tokens_generados": 103,
+            "tiempo_generacion": 13.920383,
+            "tiempo_total": 15.4701194,
+            "tokens_por_segundo": 7.399221702448848,
+            "id": "raz_01",
+            "categoria": "razonamiento_veracidad"
+        },
+        {
+            "prompt": "Cual es la capital de Australia y cual es su ciudad mas poblada?",
+            "respuesta": "La capital de **Australia** es **Canberra**.\n\nLa ciudad más poblada de Australia es **Sídney** (Sydney).",
+            "ttft": 0.80315086600001,
+            "tokens_generados": 28,
+            "tiempo_generacion": 3.563691,
+            "tiempo_total": 4.3596072,
+            "tokens_por_segundo": 7.8570223961617325,
+            "id": "raz_02",
+            "categoria": "razonamiento_veracidad"
+        }
+    ]
+}
