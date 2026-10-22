@@ -1,0 +1,19 @@
+{
+    "modelo": "ministral-3:8b",
+    "temperatura": 0.2,
+    "max_tokens": 120,
+    "fecha_ejecucion": "2026-10-22T02:16:07.807920",
+    "resultados": [
+        {
+            "prompt": "Indica cual es la capital de Australia y cual es su ciudad mas poblada.",
+            "respuesta": "La capital de Australia es **Canberra**.\n\nLa ciudad más poblada de Australia es **Sídney** (Sydney).",
+            "ttft": 1.0258851590000404,
+            "tokens_generados": 26,
+            "tiempo_generacion": 3.587925,
+            "tiempo_total": 4.6051663,
+            "tokens_por_segundo": 7.24652828584767,
+            "id": "prompt_individual",
+            "categoria": "sin_categoria"
+        }
+    ]
+}

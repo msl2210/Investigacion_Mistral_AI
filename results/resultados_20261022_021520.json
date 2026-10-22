@@ -1,0 +1,19 @@
+{
+    "modelo": "ministral-3:8b",
+    "temperatura": 0.9,
+    "max_tokens": 180,
+    "fecha_ejecucion": "2026-10-22T02:15:20.638382",
+    "resultados": [
+        {
+            "prompt": "Escribe una introduccion de aproximadamente 100 palabras sobre la importancia de la ciberseguridad.",
+            "respuesta": "**La importancia de la ciberseguridad en la era digital**\n\nEn un mundo donde la tecnología y las comunicaciones digitales son pilares fundamentales de nuestras vidas, la **ciberseguridad** emerge como una necesidad indiscutible. La protección de datos personales, transacciones financieras, infraestructuras críticas y sistemas corporativos frente a amenazas como hackers, malware o ataques de ingeniería social garantiza la integridad y privacidad de las personas. Desde un usuario común hasta las grandes empresas, todos enfrentamos riesgos en línea que pueden derivar en pérdidas económicas, fraudes o incluso daños irreparables. Invertir en ciberseguridad no es solo una precaución: es un acto de responsabilidad que fortalece la confianza en la tecnología y asegura un futuro digital más seguro y resiliente para individuos y sociedades.",
+            "ttft": 0.17964389999997366,
+            "tokens_generados": 179,
+            "tiempo_generacion": 26.482229,
+            "tiempo_total": 26.6525853,
+            "tokens_por_segundo": 6.7592497595274175,
+            "id": "prompt_individual",
+            "categoria": "sin_categoria"
+        }
+    ]
+}
