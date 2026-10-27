@@ -1,6 +1,10 @@
 # Proyecto de Investigación: Mistral AI
 
-Proyecto desarrollado para el curso **Programación IV – Lenguajes de Cuarta Generación**.
+Proyecto desarrollado para el curso **Programación IV – Lenguajes de Cuarta Generación** de la Universidad Central.
+
+**Autores:** Johan Soto Jiménez y Mario Sequeira Lopez.
+
+**Docente:** Glider Lopez Paisano.
 
 El objetivo práctico es ejecutar localmente un modelo de lenguaje de Mistral AI, construir un script propio de inferencia, medir su desempeño y comparar la ejecución nativa con una ejecución mediante Docker.
 
@@ -17,12 +21,14 @@ El objetivo práctico es ejecutar localmente un modelo de lenguaje de Mistral AI
 ## Estructura del proyecto
 
 ```text
-Mistral_AI/
+Investigacion_Mistral_AI/
 ├── Dockerfile
 ├── .dockerignore
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
+├── docs/
+│   └── gcp_cotizacion_final_2026-10-20.csv
 ├── prompts/
 │   ├── suite.json
 │   └── dev_suite.json
@@ -185,7 +191,8 @@ También se repitieron dos prompts con temperaturas de muestreo `0.2` y `0.9` pa
 
 Durante las pruebas, Ministral 3 8B mostró aproximadamente:
 
-- 7 tokens por segundo utilizando CPU;
+- 7 tokens por segundo utilizando CPU (7,19 en ejecución nativa y 7,46 en Docker, en promedio);
+- una calificación promedio de 17,3 sobre 20 en la suite de 10 pruebas funcionales;
 - comportamiento similar entre ejecución nativa y Docker;
 - alrededor de 19 GB de RAM observados durante una prueba de carga;
 - CPU cercana al 70 % en una medición representativa.
@@ -239,6 +246,10 @@ La imagen `1.1` fue construida antes de incorporar la suite definitiva.
 **Solución**
 
 Se reconstruyó la imagen y posteriormente se generó la versión final `1.3`, que además utiliza una versión fija de la imagen base de Python.
+
+## Documentación
+
+El informe completo del proyecto (parte teórica, desarrollo práctico, análisis de costos y conclusiones) se entrega por separado como documento en formato Word. La cotización final de Google Cloud, usada en el análisis de costos, está en `docs/gcp_cotizacion_final_2026-10-20.csv`.
 
 ## Repositorio
 
